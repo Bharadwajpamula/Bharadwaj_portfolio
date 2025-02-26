@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tiny5&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background: #000000;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    background-color: rgb(0, 0, 0)
+}
+#navbar_logo{
+    mix-blend-mode: lighten;
+    display: flex;
+    align-items: center;
+}
+
+.navbar ul{
+    font-family: Arial, Helvetica, sans-serif;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0;
+    margin: 0;
+}
+.navbar ul li{
+    margin: 0 8%;
+
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: aliceblue;
+    padding: 10px;
+    transition: transform 0.3s ease;
+
+}
+
+.logo{
+    width: 10rem;
+}
+.navbar ul li a:hover{
+    color: grey;
+    border-radius: 20px;
+    transition: 0.1s ease;
+    transform: scale(1.08);
+    cursor: pointer;
+}
+.photo_name{
+    padding-left: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+/* .photo_name button{
+    padding: 10px;
+    background-color: yellow;
+    border-radius: 30px;
+    border: none;
+    
+} */
+
+.photo{
+    margin: 5%;
+    padding: 10px;
+}
+.photo_b{
+    width: 30vw;
+    height: auto;
+    clip-path: circle(42%);
+    object-fit: cover;
+}
+.names h2{
+    font-family: "Homemade Apple", cursive;
+    font-size: 37px;
+}
+.names h3{
+    font-size: 40px;
+}
+.names p{
+    font-size: 20px;
+    color: rgba(128, 128, 128, 0.778);
+}
+.names{
+    font-family: 'Times New Roman', Times, serif;
+    color: whitesmoke;
+    font-size: 32px;
+    padding: 10px 50px;
+    transform: translate3d(ease);
+    text-shadow: -2px 2px 6px rgba(245, 222, 179, 0.342);
+
+}
+.typewriter {
+    overflow: hidden; /* Hide overflowing text */
+    white-space: nowrap; /* Prevent text wrapping */
+    border-right: 3px solid rgba(255, 255, 255, 0.75); /* Blinking cursor effect */
+    width: 20ch;
+    animation: typing 4s steps(20, end), blink 0.6s step-end infinite;
+    animation-iteration-count: infinite;
+}
+
+/* Typing animation */
+@keyframes typing {
+    from {
+        width: 0; /* Start with no text visible */
+    }
+    to {
+        width: 20ch; /* Reveal the full text */
+    }
+}
+
+/* Blinking cursor animation */
+@keyframes blink {
+    from {
+        border-color: rgba(255, 255, 255, 0.75);
+    }
+    to {
+        border-color: transparent;
+    }
+}
+#skills_head{
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    color: whitesmoke;
+}
+.class_skills {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+}
+
+.class_skills section {
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.section_img{
+    width: 25px;
+    height: auto;
+    padding: 8px;
+}
+.class_skills section:hover {
+    background-color: #ddd;
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+#class_projects h1{
+    color: whitesmoke;
+    text-align: center;
+    margin-top: 30px;
+}
+.project_div{
+    margin: 20px;
+}
+.pj1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+    padding: 20px;
+    color: whitesmoke;
+}
+.pj2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+    padding: 20px;
+    color: whitesmoke;
+
+}
+.pj1 h1, .pj2 h1{
+    color: rgb(219, 219, 35);
+
+}
+.pj1_img{
+    padding: 15px;
+    width: 20rem;
+    height: auto;
+    border-radius: 20px;
+}
+.pj2_img{
+    width: 20rem;
+    height: auto;
+    margin-right: 20px;
+    border-radius: 20px;
+}
+.pj1_h_p a{
+    text-decoration: none;
+    color: violet;
+}
+.pj2_h_p a{
+    text-decoration: none;
+    color: violet;
+}
+.pj1_h_p{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    font-size: 20px;
+    font-family: "Tiny5", sans-serif;
+
+}
+.pj2_h_p{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    font-size: 20px;
+    font-family: "Tiny5", sans-serif;
+    
+}
+#class_contact h1{
+    color: whitesmoke;
+    text-align: center;
+    margin: 30px;
+}
+.contact_div{
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+.sec_1 ul li{
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    padding: 4px;
+
+}
+.sec_2 ul li{
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    padding: 4px;
+}
+.connect_with_me{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    display: block;
+    justify-content: center;
+    text-decoration: none;
+}
+.connect_with_me ul{
+    list-style: none;
+    gap: 5px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+.connect_with_me ul li{
+    display: inline-block;
+    color: whitesmoke;
+    width: 12%;
+    height: auto;
+    
+}
+
+.connect_with_me ul li a img {
+    color: whitesmoke;
+    padding: 10px;
+    font-size: 24px;
+    width: 40%; 
+    height: auto; 
+    filter: invert(1);
+    transition: filter 0.3s ease, transform 0.3s ease; 
+}
+
+.connect_with_me ul li a img:hover {
+    transform: scale(1.6); 
+    filter: invert(1) brightness(1.5); 
+}
+footer{
+    color: whitesmoke;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    padding: 10px;
+    margin: 10px;
+}
